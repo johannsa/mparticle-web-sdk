@@ -17,7 +17,8 @@ var MessageType = {
 // trigger an immediate upload.
 var TriggerUploadType = {
     [MessageType.Commerce]: 1,
-    [MessageType.UserAttributeChange]: 1,
+    // Disabled as a workaround for ZD11535 / SQDSDKS-5412
+    // [MessageType.UserAttributeChange]: 1,
     [MessageType.UserIdentityChange]: 1,
 };
 
